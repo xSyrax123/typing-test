@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing test</title>
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <link href="https://fonts.cdnfonts.com/css/dm-sans" rel="stylesheet" />
+  </head>
+  <body>
+    <header><h1>Typing test</h1></header>
+    <section class="typing-test-container">
+      <div class="words-container">
+        <p></p>
+      </div>
+      <div class="typing-section">
+        <input type="text"/>
+        <div class="timer">01:00</div>
+        <button type="button" class="btn">Reset</button>
+      </div>
+    </section>
+    <section class="result">
+      <header>Result</header>
+      <div id="wpm" class="wpm"></div>
+      <div class="keystrokes">
+        <div>Keystrokes</div>
+        <div id="keystrokes"></div>
+      </div>
+      <div class="accuracy">
+        <div>Accuracy</div>
+        <div id="accuracy"></div>
+      </div>
+      <div class="correct-words">
+        <div>Correct words</div>
+        <div id="correct-words"></div>
+      </div>
+      <div class="wrong-words">
+        <div>Wrong words</div>
+        <div id="wrong-words"></div>
+      </div>
+    </section>
+    <script src="assets/index.js"></script>
+  </body>
+</html>

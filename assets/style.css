@@ -1,0 +1,153 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 100vw;
+  max-height: 100vh;
+  background-color: #cdeff0;
+}
+
+header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #049096;
+}
+
+.typing-test-container {
+  height: auto;
+  width: 1000px;
+  background-color: #a7e4e7;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.words-container {
+  background-color: #f5ffff;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 100%;
+  min-height: 80px;
+  max-height: 80px;
+}
+
+.words-container p {
+  font-size: 28px;
+  word-spacing: 5px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.typing-section {
+  background-color: #b4e7a7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.typing-section > *:not(:last-child) {
+  margin-right: 10px;
+} 
+
+input {
+  padding: 6px 12px;
+  width: 450px;
+  height: 30px;
+  max-width: 450px;
+  max-height: 30px;
+}
+
+.btn {
+  background: none;
+  background-color: #48b445;
+  border: 0;
+  color: #f5ffff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: bold;
+  line-height: normal;
+  overflow: visible;
+  width: 60px;
+  height: 35px;
+  border-radius: 8px;
+  padding: 0 10px;
+  margin: 5px;
+}
+
+.timer {
+  background-color: #148161;
+  color: #f5ffff;
+  width: 60px;
+  height: 35px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
+
+.wrong {
+  background-color: red;
+}
+
+.result {
+  height: 230px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto 0;
+  max-width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #6CC2CB;
+  visibility: hidden;
+}
+
+.result header {
+  background-color: #049096;
+  color: #FFA500;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  padding: 6px;
+}
+
+.keystrokes,
+.accuracy,
+.correct-words, 
+.wrong-words {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 10px;
+  border-bottom: 1px solid #E0E6E8;
+  color: #f9f9f9;
+}
+
+.wpm {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 23px;
+  font-weight: bold;
+  border-bottom: 1px solid #E0E6E8;
+  padding: 10px;
+  color: #0afb3a;
+}
