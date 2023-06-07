@@ -11,15 +11,15 @@
     <header><h1>Typing test</h1></header>
     <section class="typing-test-container">
       <div class="words-container">
-        <p></p>
+        <p id="quote"></p>
       </div>
       <div class="typing-section">
-        <input type="text"/>
-        <div class="timer">01:00</div>
-        <button type="button" class="btn">Reset</button>
+        <input type="text" id="input"/>
+        <div class="timer" id="timer">01:00</div>
+        <button type="button" class="btn" id="reset-button">Reset</button>
       </div>
     </section>
-    <section class="result">
+    <section class="result" id="result">
       <header>Result</header>
       <div id="wpm" class="wpm"></div>
       <div class="keystrokes">
